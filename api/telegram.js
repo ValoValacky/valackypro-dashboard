@@ -4,7 +4,7 @@
 
 const fetch = require('node-fetch');
 
-const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+const BOT_TOKEN = process.env.TELEGRAM_TOKEN;
 const CHAT_ID   = process.env.TELEGRAM_CHAT_ID;
 
 async function sendTelegram(message, parseMode = 'HTML') {
