@@ -1,0 +1,11 @@
+{
+  "name": "valackypro-dashboard",
+  "version": "2.0.0",
+  "description": "ValackyPro Institutional Trading Dashboard with Telegram Alerts",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.9"
+  }
+}
