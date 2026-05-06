@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ],
+  "crons": [
+    {
+      "path": "/api/cron-alerts",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron-calendar",
+      "schedule": "0 7 * * 1-5"
+    }
+  ]
+}
