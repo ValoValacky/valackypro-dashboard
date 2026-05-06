@@ -40,6 +40,15 @@ module.exports = async function handler(req, res) {
 
     let message = '';
 
+    // ─────────────────────────────────────────────
+    // 🔥 Commande /ping (réponse instantanée)
+    // ─────────────────────────────────────────────
+    if (type === 'ping') {
+      await sendTelegram("Bot actif ✅");
+      return res.status(200).json({ ok: true, message: 'Ping OK' });
+    }
+    // ─────────────────────────────────────────────
+
     switch (type) {
 
       // ── Manual test ──
